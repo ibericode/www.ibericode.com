@@ -1,0 +1,22 @@
+title: ibericode
+email: your-email@domain.com
+description: WordPress products for small businesses.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ibericode.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+permalink: /:year/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

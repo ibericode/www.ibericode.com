@@ -1,0 +1,27 @@
+---
+layout: post
+title: Behind the scenes of Boxzilla
+author_name: Danny
+author_url: https://dannyvankooten.com/
+date: '2016-05-13 13:39:12 +0200'
+categories:
+- News
+wordpress_id: 100
+---
+<p>A few days ago we shared our latest plugin with the world: <a href="https://boxzillaplugin.com/">Boxzilla</a>.</p>
+<p>Boxzilla is the successor of <a href="https://wordpress.org/plugins/scroll-triggered-boxes/">Scroll Triggered Boxes</a>, a plugin allowing you to create content boxes which can pop-up or slide-in at various trigger points. Scroll Triggered Boxes was very well received by the WordPress community, with over 125.000 downloads, 15.000 active sites and nearly 100 five-star reviews (zero bad ones).</p>
+<p>However, we felt the name "Scroll Triggered Boxes" didn't do justice to the plugin anymore, since it evolved far beyond allowing just a scroll trigger. </p>
+<p>That's why we came up with a new name, introduced several new features and got serious about introducing a Premium plan so the plugin could start sustaining itself.</p>
+<p>Right now the only reason we're able to really spend time on the plugin is because of the success of <a href="https://mc4wp.com/">MailChimp for WordPress</a> (which recently crossed the 500.000 active sites mark).  We're hoping to improve that with these changes and the introduction of the <a href="https://boxzillaplugin.com/add-ons/exit-intent/">exit intent add-on</a>.</p>
+<h3>Boxzilla.js</h3>
+We started working on decoupling the actual trigger logic from the plugin itself so that it can be used outside of WordPress. The result of that effort is <a href="https://github.com/ibericode/boxzilla.js">open-sourced as Boxzilla.js</a> &mdash; have a play with it! </p>
+<h3>Technology stack</h3>
+In order to start selling Premium plans to our users, we decided to try something new. </p>
+<p>We've been using <a href="https://easydigitaldownloads.com/">Easy Digital Downloads</a> for over 3 years now and although it was super easy to get started with, we've been feeling rather held back by it lately.</p>
+<p>Therefore, we built a custom solution on top of <a href="https://laravel.com/">Laravel</a> (a PHP framework), <a href="https://stripe.com/nl">Stripe</a> (for payments) and <a href="https://www.moneybird.com/">MoneyBird</a> (Dutch accounting software). </p>
+<p>To deal with Europe's crazy VAT laws, we wrote some more code which we've open sourced as well: <a href="https://github.com/dannyvankooten/laravel-vat">Laravel VAT</a>.</p>
+<p>Most content pages on <a href="https://boxzillaplugin.com/">Boxzilla's website</a> are handled using <a href="https://jekyllrb.com/">Jekyll</a>, a static site generator, which has been an absolute joy to work with.</p>
+<h3>Monthly payments</h3>
+<p>We started offering monthly payments (next to the yearly option). Interestingly enough, over 50% of people that bought a Boxzilla license in the last few days still chose to pay yearly, even though we default to the monthly option. You get 2 free months a year if you pay up front, by the way.</p>
+<p>I guess only time will tell if monthly payments are really worth it - we realise it's something rather new in WordPress-land and some even see it as a huge risk. :)</p>
+<p>If you have any questions about any of these changes, our set-up or anything related to what we do, feel free to ask away!</p>

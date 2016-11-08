@@ -1,0 +1,59 @@
+---
+layout: default
+title: Home
+---
+
+<div class="entry-body">
+  <section>
+    <p>We are a company building WordPress products that help you build your business.</p>
+  </section>
+
+  <section>
+  <h2>Our products</h2>
+    <div class="clearfix">
+      <a class="block small-margin" href="https://mc4wp.com/">
+        <img src="/media/mc4wp-on-red.png" alt="mc4wp-on-red" width="150" height="150" /> &nbsp;
+        <h3 class="inline" style="line-height: 100%;">MailChimp for WordPress</h3>
+      </a>
+      <a class="block small-margin" href="https://boxzillaplugin.com/">
+        <img src="/media/boxzilla-logo-small.png" alt="logo" width="150" height="150" /> &nbsp;
+        <h3 class="inline" style="line-height: 100%;">Boxzilla</h3>
+      </a>
+    </div>
+    <p>We are working on some cool stuff, like <a href="https://mc4wp.com/">MailChimp for WordPress</a>, <a href="https://boxzillaplugin.com/">Boxzilla</a> and several other <a href="https://profiles.wordpress.org/ibericode/">plugins for WordPress</a>.</p>
+  </section>
+
+  <section class="team grid">
+    <h2>The Team</h2>
+    <p>We are a small and remote team with many years of experience when it comes to developing and supporting WordPress (or general web based) products.</p>
+    <div class="bit-3 overlay">
+      <a href="http://dvk.co/"><img src="/media/danny.jpeg" alt="Danny" width="150" height="150" />
+      <span class="overlay-text"><strong>Danny van Kooten</strong><br />Founder &amp; Developer</span></a>
+    </div>
+    <div class="bit-3 overlay">
+      <img src="/media/harish.jpeg" alt="Harish" width="150" height="150" />
+      <span class="overlay-text"><strong>Harish Chouhan</strong><br />Support Engineer</span>
+    </div>
+    <div class="bit-3 overlay">
+      <img src="/media/arne.jpg" alt="Arne" width="150" height="150" />
+      <span class="overlay-text"><strong>Arne Lap</strong><br />Support Engineer</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's happening?</h2>
+    <ul class="post-list">
+       {% for post in site.posts %}
+       <li>
+           <span class="entry-meta">{{ post.date | date: "%b %-d, %Y" }}</span> &nbsp;
+           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+       </li>
+       {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h3>Follow us</h3>
+    <p>Like all cool kids, we're on <a href="https://twitter.com/ibericode" rel="external"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/ibericode" rel="external"><i class="fa fa-github"></i> GitHub</a> and even <a href="https://facebook.com/ibericode" rel="external"><i class="fa fa-facebook"></i> Facebook</a>.</p>
+  </section>
+</div>

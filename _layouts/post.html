@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+  <header class="entry-header">
+  	<h1 class="entry-title" itemprop="headline">{{ page.title }}</h1>
+  	<p class="entry-meta">
+  		<time class="entry-time" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+  		{% if page.author_name %}<span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">by <span class="entry-author-name" itemprop="name">{{ page.author_name }}</span>.</span>{% endif %}
+  	</p>
+  </header>
+
+  <div class="entry-body" itemprop="articleBody">
+  	 {{ content }}
+  	<br style="clear: both;" />
+  </div>
+</article>
+
+<div class="big-margin">
+  <div id="disqus_thread"></div>
+</div>
+<script>
+   var disqus_config = function () {
+     this.page.url = '{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}';
+   };
+   (function() { // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = '//ibericode.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
