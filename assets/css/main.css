@@ -431,7 +431,8 @@ a img.aligncenter {
 }
 
 /* Text meant only for screen readers. */
-.screen-reader-text {
+.screen-reader-text,
+.sr-only {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -439,7 +440,8 @@ a img.aligncenter {
 	overflow: hidden;
 }
 
-.screen-reader-text:focus {
+.screen-reader-text:focus
+.sr-only:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -458,3 +460,26 @@ a img.aligncenter {
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+
+}
+
+.icon-twitter {
+  background: url( "../img/icon-twitter.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.icon-github {
+  background: url( "../img/icon-github.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+a .icon { opacity: 0.7; }
+a:hover .icon, a:focus .icon { opacity: 1; }
