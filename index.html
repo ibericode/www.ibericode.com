@@ -4,13 +4,13 @@ title: Home
 ---
 
 <div class="entry-body">
-  <section>
+  <section id="description">
     <p>We are a small company building, mostly marketing related, WordPress products to help you grow your business.</p>
     <p>Our plugins are currently in active use on well over 1 million sites. More than likely, you have unknowingly used our software already.</p>
   </section>
 
-  <section>
-  <h2>Our products</h2>
+  <section id="products">
+    <h2>Our products</h2>
     <div class="clearfix">
       <a class="block small-margin" href="https://mc4wp.com/">
         <img src="/media/mc4wp-on-red.png" alt="mc4wp-on-red" width="150" height="150" /> &nbsp;
@@ -24,7 +24,7 @@ title: Home
     <p>We are working on some cool stuff, like <a href="https://mc4wp.com/">MailChimp for WordPress</a>, <a href="https://boxzillaplugin.com/">Boxzilla</a> and several other <a href="https://profiles.wordpress.org/ibericode/">plugins for WordPress</a>.</p>
   </section>
 
-  <section class="team grid">
+  <section id="team" class="team grid">
     <h2>The team</h2>
     <p>We are a small and remote team with many years of experience when it comes to developing and supporting WordPress (or general web based) products.</p>
     <div class="bit-3 overlay">
@@ -41,7 +41,7 @@ title: Home
     </div>
   </section>
 
-  <section>
+  <section id="latest-posts">
     <h2>What's happening?</h2>
     <ul class="post-list">
        {% for post in site.posts %}
@@ -53,8 +53,21 @@ title: Home
     </ul>
   </section>
 
-  <section>
-    <h3>Follow us</h3>
+  <section id="business-info">
+    <h2>Contact information</h2>
+    <p>Our contact information or physical address is as follows.</p>
+    <address style="font-style: normal;">
+      <strong>ibericode BV</strong><br />
+      Wassenaarweg 40<br />
+      6843NW Arnhem<br />
+      The Netherlands<br /><br />
+      Chamber of Commerce: 65413741<br />
+      VAT Number: NL856102337B01<br />
+    </address>
+  </section>
+
+  <section id="social-media">
+    <h2>Follow us</h2>
     <p>If you'd like to stay updated on our work, find us on <a href="https://twitter.com/ibericode" rel="external">Twitter</a> or <a href="https://github.com/ibericode" rel="external">GitHub</a>.</p>
   </section>
 </div>
