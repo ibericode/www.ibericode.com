@@ -3,32 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/assets/css/main.css?v=1">
-	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setDomains", ["*.ibericode.com"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.ibericode.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//analytics.ibericode.com/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
+	<link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		_paq.push(["setDomains", ["*.ibericode.com"]]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="//analytics.ibericode.com/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '4']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<noscript><p><img src="//analytics.ibericode.com/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
 </head>
-<body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage" />
-
-
+<body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <div class="container">
 
 	<header class="header" role="banner" itemscope="itemscope" itemtype="https://schema.org/Organization">
@@ -37,47 +33,43 @@
 			<meta itemprop="logo" content="/assets/img/logo.png">
 
 			{% if page.url == "/" %}
-				<div id="logo-video-player-wrap">
-					<div id="logo-video-player-cell">
-						<div id="logo-video-player-mount"></div>
-					</div>
+			<div id="logo-video-player-wrap">
+				<div id="logo-video-player-cell">
+					<div id="logo-video-player-mount"></div>
 				</div>
+			</div>
 			{% endif %}
 		</h1>
 	</header>
 
-<div class="" role="main">
- {{ content }}
- </div>
+	<div role="main">
+		{{ content }}
+	</div>
 
- <footer class="footer" role="contentinfo">
-	<p>
-		&copy; 2010-2017 - <a href="/">ibericode</a>
-		<span class="pull-right footer--social">
-			<a href="https://twitter.com/ibericode" rel="external" title="ibericode on Twitter"><i class="icon icon-twitter"></i></a>
-			<a href="https://github.com/ibericode" rel="external" title="ibericode on GitHub"><i class="icon icon-github"></i></a>
-		</span>
-	</p>
-</footer>
-</div>
+	<footer class="footer" role="contentinfo">
+		<p>
+			&copy; 2010 - {{ site.time | date: '%Y' }} - <a href="{{site.url}}/">ibericode</a>
+			<span class="pull-right footer--social">
+				<a href="https://twitter.com/ibericode" rel="external" title="ibericode on Twitter"><i class="icon icon-twitter"></i></a>
+				<a href="https://github.com/ibericode" rel="external" title="ibericode on GitHub"><i class="icon icon-github"></i></a>
+			</span>
+		</p>
+	</footer>
+</div><!-- / .container -->
 
 <div id="rico"></div>
-
 <script>
 	(function() {
 		var playerElement = document.getElementById('logo-video-player-wrap');
 		if( ! playerElement ) {
 			return;
 		}
-		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');
 		tag.src = "https://www.youtube.com/iframe_api";
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-		// get player width
 		var width = playerElement.clientWidth;
 		playerElement.style.display = 'none';
-		// 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
 		var player;
 		window.onYouTubeIframeAPIReady = function() {
 			player = new YT.Player('logo-video-player-mount', {
