@@ -7,22 +7,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/assets/css/main.css?v=1">
 	<link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
-	<!-- Piwik -->
-	<script type="text/javascript">
-		var _paq = _paq || [];
-		_paq.push(["setDomains", ["*.ibericode.com"]]);
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u="//analytics.ibericode.com/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
-			_paq.push(['setSiteId', '4']);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-		})();
+
+	<!-- Ana - transparent site analytics - https://github.com/dannyvankooten/ana -->
+	<script>
+	(function(d, w, u, o){
+		w[o]=w[o]||function(){
+			(w[o].q=w[o].q||[]).push(arguments)
+		};
+		a=d.createElement('script'),
+		m=d.getElementsByTagName('script')[0];
+		a.async=1; a.src=u;
+		m.parentNode.insertBefore(a,m)
+	})(document, window, '//fathom.ibericode.com/tracker.js', 'ana');
+	ana('setTrackerUrl', '//fathom.ibericode.com/collect');
+	ana('trackPageview');
 	</script>
-	<noscript><p><img src="//analytics.ibericode.com/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
+	<!-- / Ana tracker -->
 </head>
 <body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <div class="container">
@@ -101,5 +101,19 @@
 		}
 	})();
 </script>
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(["setDomains", ["*.ibericode.com"]]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+	var u="//analytics.ibericode.com/";
+	_paq.push(['setTrackerUrl', u+'piwik.php']);
+	_paq.push(['setSiteId', '4']);
+	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<noscript><p><img src="//analytics.ibericode.com/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
