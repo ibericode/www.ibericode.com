@@ -8,22 +8,22 @@
 	<link rel="stylesheet" href="/assets/css/main.css?v=1">
 	<link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
 
-	<!-- Ana - transparent site analytics - https://github.com/dannyvankooten/ana -->
+	<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 	<script>
-	(function(d, w, u, o){
-		w[o]=w[o]||function(){
-			(w[o].q=w[o].q||[]).push(arguments)
+	(function(f, a, t, h, o, m){
+		a[h]=a[h]||function(){
+			(a[h].q=a[h].q||[]).push(arguments)
 		};
-		a=d.createElement('script'),
-		m=d.getElementsByTagName('script')[0];
-		a.async=1; a.src=u;
+		a=f.createElement('script'),
+		m=f.getElementsByTagName('script')[0];
+		a.async=1; a.src=t;
 		m.parentNode.insertBefore(a,m)
-	})(document, window, '//fathom.ibericode.com/tracker.js', 'ana');
-	ana('setTrackerUrl', '//fathom.ibericode.com/collect');
-	ana('trackPageview');
+	})(document, window, '//fathom.ibericode.com/tracker.js', 'fathom');
+	fathom('setTrackerUrl', '//fathom.ibericode.com/collect');
+	fathom('trackPageview');
 	</script>
-	<!-- / Ana tracker -->
-</head>
+	<!-- / Fathom tracker -->
+	</head>
 <body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <div class="container">
 
