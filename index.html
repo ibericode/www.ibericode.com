@@ -5,54 +5,41 @@ title: Home
 
 <div class="entry-body">
   <section id="description">
-    <p>We are a small company building, mostly marketing related, WordPress products to help you grow your business.</p>
-    <p>Our plugins combined count well over 10 million downloads and are currently in active use on more than 1 million sites.</p>
-    <p>More than likely, you have (perhaps unknowingly) used our software already.</p>
+	<h2>What is ibericode?</h2>
+	<p>ibericode BV is the umbrella company for projects undertaken by <a href="https://dannyvankooten.com/">Danny van Kooten</a> and friends.</p>
+    <p>We were founded in 2010 and have been busy building and supporting a few marketing related WordPress products since then.</p>
+    <p>Our plugins have been downloaded well over 15 million times and are in active use on about 1.5 million sites.</p>
+    <p>More than likely, you have used some of our software already.</p>
   </section>
 
   <section id="products">
     <h2>Our products</h2>
-    <div class="clearfix">
-      <a href="https://mc4wp.com/" title="MailChimp for WordPress" style="display: inline-block;">
-        <img src="{{site.url}}/media/mailchimp-for-wordpress-logo.png" alt="MailChimp for WordPress logo" width="150" height="150" /> &nbsp;
-      </a>
-      <a href="https://boxzillaplugin.com/" title="Boxzilla" style="display: inline-block;">
-        <img src="{{site.url}}/media/boxzilla-logo-small.png" alt="Boxzilla logo" width="150" height="150" /> &nbsp;
-      </a>
-      <a href="https://htmlforms.io/" title="HTML Forms" style="display: inline-block;">
-        <img src="{{site.url}}/assets/img/html-forms-logo.svg" alt="HTML Forms logo" width="150" height="150" /> &nbsp;
-      </a>
-    </div>
-    <p>We are working on some cool stuff, like <a href="https://mc4wp.com/">MailChimp for WordPress</a>, <a href="https://www.htmlforms.io/">HTML Forms</a>, <a href="https://boxzillaplugin.com/">Boxzilla</a> and several other <a href="https://profiles.wordpress.org/ibericode/">plugins for WordPress</a>.</p>
+	<ul>
+		<li><a href="https://mc4wp.com/">MailChimp for WordPress</a>, a WordPress plugin that allows you to add a multitude of sign-up methods to your site.</li>
+		<li><a href="https://boxzillaplugin.com/">Boxzilla</a>, a WordPress plugin to show pop-up or slide-in boxes.</li>
+		<li><a href="https://htmlforms.io">HTML Forms</a>, a WordPress plugin to build multi-purpose forms.</li>
+		<li><a href="https://usefathom.com">Fathom Analytics</a>, an open-source alternative to Google Analytics.</li>
+	</ul>
   </section>
 
   <section id="team" class="team grid">
     <h2>The team</h2>
     <p>We are a small and remote team with many years of experience when it comes to developing and supporting WordPress (or general web based) products.</p>
     <div class="bit-3 overlay">
-      <a href="http://dvk.co/"><img src="{{site.url}}/media/danny.jpeg" alt="Danny" width="150" height="150" />
-      <span class="overlay-text"><strong>Danny van Kooten</strong><br />Founder &amp; Developer</span></a>
+		<img src="{{site.url}}/media/danny.jpeg" alt="Danny" width="150" height="150" />
+      <div class="overlay-text">
+		  <a href="https://dannyvankooten.com/"> <strong>Danny van Kooten</strong></a>
+		  <small>Founder &amp; Developer</small>
+	  </div>
     </div>
     <div class="bit-3 overlay">
       <img src="{{site.url}}/media/harish.jpeg" alt="Harish" width="150" height="150" />
-      <span class="overlay-text"><strong>Harish Chouhan</strong><br />Support Engineer</span>
+	  <div class="overlay-text"><strong>Harish Chouhan</strong><small>Support Engineer</small></div>
     </div>
     <div class="bit-3 overlay">
       <img src="{{site.url}}/media/arne.jpg" alt="Arne" width="150" height="150" />
-      <span class="overlay-text"><strong>Arne Lap</strong><br />Support Engineer</span>
+	  <div class="overlay-text"><strong>Arne Lap</strong><small>Support Engineer</small></div>
     </div>
-  </section>
-
-  <section id="latest-posts">
-    <h2>What's happening?</h2>
-    <ul class="post-list">
-       {% for post in site.posts %}
-       <li>
-           <span class="entry-meta">{{ post.date | date: "%b %-d, %Y" }}</span> &nbsp;
-           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-       </li>
-       {% endfor %}
-    </ul>
   </section>
 
   <section id="business-info">
