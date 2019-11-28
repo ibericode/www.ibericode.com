@@ -1,14 +1,12 @@
 <!doctype html>
-<html class="no-js">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/assets/css/main.css?v=1">
+	<link rel="stylesheet" href="{{site.url}}/assets/css/main.css?v=1">
 	<link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
-
-	<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 	<script>
 	(function(f, a, t, h, o, m){
 		a[h]=a[h]||function(){
@@ -22,15 +20,14 @@
 	fathom('setTrackerUrl', '//fathom.ibericode.com/collect');
 	fathom('trackPageview');
 	</script>
-	<!-- / Fathom -->
 	</head>
 <body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <div class="container">
 
 	<header class="header" role="banner" itemscope="itemscope" itemtype="https://schema.org/Organization">
 		<h1 class="site-title" itemprop="name">
-			<a href="/" itemprop="url">ibericode</a>
-			<meta itemprop="logo" content="/assets/img/logo.png">
+			<a href="{{site.url}}" itemprop="url">ibericode</a>
+			<meta itemprop="logo" content="{{site.url}}/assets/img/logo.png">
 
 			{% if page.url == "/" %}
 			<div id="logo-video-player-wrap">
@@ -50,7 +47,6 @@
 		<p>
 			&copy; 2010 - {{ site.time | date: '%Y' }} - <a href="{{site.url}}/">ibericode</a>
 			<span class="pull-right footer--social">
-				<a href="https://twitter.com/ibericode" rel="external" title="ibericode on Twitter"><i class="icon icon-twitter"></i></a>
 				<a href="https://github.com/ibericode" rel="external" title="ibericode on GitHub"><i class="icon icon-github"></i></a>
 			</span>
 		</p>
