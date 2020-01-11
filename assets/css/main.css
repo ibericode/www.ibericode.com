@@ -6,8 +6,8 @@ body {
 	min-height: 100%;
 	box-sizing: border-box;
 	background: white;
-	border-top: 6px solid #d96473;
-	border-bottom: 6px solid #d96473;
+	border-top: 6px solid #06F;
+	border-bottom: 6px solid #06F;
 	font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif;
 	color: #444;
 	line-height: 1.8;
@@ -35,7 +35,7 @@ textarea {
 }
 
 a {
-	color: #d96473;
+	color: #06F;
 	text-decoration: underline;
 }
 
@@ -48,10 +48,10 @@ a:focus {
 input[type="submit"],
 button,
 a.button {
-	background: #d96473;
+	color: white;
+	background: #06F;
 	display: inline-block;
 	padding: 12px 24px;
-	color: white;
 	border: 0;
 }
 
@@ -93,7 +93,7 @@ a.button:focus {
 
 .footer {
 	font-size: 14px;
-	color: #999;
+	color: #767676;
 	margin-top: 60px;
 }
 
@@ -140,8 +140,10 @@ a.button:focus {
 .team-members .img {
 	float: right;
 }
+
 .team-members .text {
 	margin-right: 24px;
+
 }
 .job {
 	font-style: italic;
