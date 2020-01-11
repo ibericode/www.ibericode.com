@@ -77,7 +77,7 @@ a.button:focus {
 	width: 100%;
 	background-size: contain;
 	position: relative;
-	margin: 0 auto;
+	margin: 20px auto;
 	height: 120px;
 }
 
