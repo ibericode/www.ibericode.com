@@ -11,7 +11,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   hard_wrap: false
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
 exclude:
