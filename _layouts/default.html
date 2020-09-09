@@ -31,7 +31,7 @@
 
 	<footer class="footer" role="contentinfo">
 		<p>
-			&copy; 2010 - {{ site.time | date: '%Y' }} - <a href="{{site.url}}/">ibericode</a>
+			&copy; 2010 - {{ site.time | date: '%Y' }} &mdash; <a href="{{site.url}}/">ibericode</a> &mdash; <a href="{{site.url}}/privacy-policy">privacy policy</a>
 			<span class="pull-right footer--social">
 				<a href="https://github.com/ibericode" class="icon" title="ibericode on GitHub">{% include icon-github.html %}</a>
 				<a href="https://profiles.wordpress.org/ibericode/" class="icon" title="ibericode on WordPress">{% include icon-wordpress.html %}</a>
@@ -39,18 +39,5 @@
 		</p>
 	</footer>
 </div>
-<script>
-	(function(f, a, t, h, o, m){
-		a[h]=a[h]||function(){
-			(a[h].q=a[h].q||[]).push(arguments)
-		};
-		o=f.createElement('script'),
-		m=f.getElementsByTagName('script')[0];
-		o.async=1; o.src=t;
-		m.parentNode.insertBefore(o,m)
-	})(document, window, '//fathom.ibericode.com/tracker.js', 'fathom');
-	fathom('setTrackerUrl', '//fathom.ibericode.com/collect');
-	fathom('trackPageview');
-	</script>
 </body>
 </html>
