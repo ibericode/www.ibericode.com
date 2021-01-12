@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a92655e6-879b-465e-acf5-bd51b001f0f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,8 @@
       <option name="presentableId" value="Default" />
       <updated>1509011982877</updated>
       <workItem from="1509011983983" duration="905000" />
-      <workItem from="1610437293927" duration="2380000" />
+      <workItem from="1610437293927" duration="3006000" />
+      <workItem from="1610441704020" duration="11000" />
     </task>
     <servers />
   </component>
@@ -63,8 +64,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
