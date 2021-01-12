@@ -172,3 +172,36 @@ Post Content
 
 .pull-right { float: right; }
 .pull-left { float: left; }
+
+.jumbotron {
+	margin: 100px auto 100px auto;
+	text-align: center;
+}
+
+.one-percent-for-the-planet {
+	background: url('../img/onepercentfortheplanet-background-600w.jpg');
+	background-size: cover;
+	color: white;
+	padding: 60px 0;
+}
+
+@media (min-width: 600px) {
+	.one-percent-for-the-planet {
+		background-image: url('../img/onepercentfortheplanet-background.jpg');
+	}
+}
+
+.one-percent-for-the-planet h3 {
+	color: white;
+}
+
+.one-percent-for-the-planet img {
+	height: 120px;
+}
+
+.one-percent-for-the-planet p,
+.one-percent-for-the-planet a {
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+}

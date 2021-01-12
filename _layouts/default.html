@@ -9,8 +9,8 @@
 	<link rel="icon" href="{{site.url}}/assets/img/favicon.ico" type="image/x-icon">
 	</head>
 <body class="{% if page.url == "/" %}home{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-<div class="container">
-	<header class="header" role="banner" itemscope="itemscope" itemtype="https://schema.org/Organization">
+<div>
+	<header class="header container" role="banner" itemscope="itemscope" itemtype="https://schema.org/Organization">
 		<h1 class="site-title" itemprop="name">
 			<a href="{{site.url}}" itemprop="url">ibericode</a>
 			<meta itemprop="logo" content="{{site.url}}/assets/img/logo.png">
@@ -29,10 +29,11 @@
 		{{ content }}
 	</div>
 
-	<footer class="footer" role="contentinfo">
+	<footer class="footer container" role="contentinfo">
 		<p>
 			&copy; 2010 - {{ site.time | date: '%Y' }} &mdash; <a href="{{site.url}}/">ibericode</a> &mdash; <a href="{{site.url}}/privacy-policy/">privacy policy</a>
 			<span class="pull-right footer--social">
+				<a href=""><img src="/assets/img/onep"</a>
 				<a href="https://github.com/ibericode" class="icon" title="ibericode on GitHub">{% include icon-github.html %}</a>
 				<a href="https://profiles.wordpress.org/ibericode/" class="icon" title="ibericode on WordPress">{% include icon-wordpress.html %}</a>
 			</span>
